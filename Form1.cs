@@ -7,6 +7,10 @@ namespace SpotifyAppLiam
             InitializeComponent();
         }
 
+        /* method initialization */
+
+        user myUser = new user();
+
         /* media buttons pause, play, repeat */
 
         private void play_Click(object sender, EventArgs e)
