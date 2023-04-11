@@ -35,6 +35,7 @@
             this.friendList = new System.Windows.Forms.ListBox();
             this.playList = new System.Windows.Forms.ListBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // play
@@ -103,11 +104,21 @@
             this.progressBar1.TabIndex = 6;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(605, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 595);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.playList);
             this.Controls.Add(this.friendList);
@@ -131,5 +142,6 @@
         private ListBox friendList;
         private ListBox playList;
         private ProgressBar progressBar1;
+        private Label label1;
     }
 }
